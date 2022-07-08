@@ -1,0 +1,40 @@
+<mat-card
+    *ngFor="let post of Post"
+    class="form-card-container mat-elevation-z5"
+>
+    <div>
+        <div class="title-text">
+            <mat-card-header>
+                <mat-card-title>{{ post.title }}</mat-card-title>
+            </mat-card-header>
+        </div>
+        <div>
+            <img
+                mat-card-image
+                src="{{ post.imageUrl }}"
+                alt="{{ post.title }}"
+            />
+        </div>
+        <div>
+            <mat-card-content>
+                <p>
+                    {{ post.text }}
+                </p>
+            </mat-card-content>
+        </div>
+        <div>
+            <mat-card-actions class="center margin-top">
+                <button
+                    [routerLink]="['update-post', post.id]"
+                    routerLinkActive="active"
+                    class="button"
+                >
+                    Edit
+                </button>
+                <button (click)="removePost(post)" class="button" mat-button>
+                    Delete
+                </button>
+            </mat-card-actions>
+        </div>
+    </div>
+</mat-card>
