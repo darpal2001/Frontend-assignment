@@ -1,0 +1,392 @@
+.App {
+  text-align: center;
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(/public/images/whatsapp\ background.jpeg);
+  content: "";
+  position: absolute;
+  inset: 0px;
+  z-index: -1;
+}
+
+nav {
+  margin: 0%;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(rgba(2, 73, 101, 0.42), rgb(1, 28, 26));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.App {
+  text-align: center;
+}
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+.nav2 {
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.createPostPage {
+  width: 80%;
+  min-height: calc(90vh - 80px);
+  display: grid;
+  margin: 20px auto;
+  place-items: center;
+}
+
+.cpContainer {
+  width: 500px;
+  min-height: 50%;
+  /* height: 100%; */
+  padding: 0px 20px 20px;
+  background-color: rgb(26, 26, 26);
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.cpContainer h1 {
+  text-align: center;
+}
+
+.cpContainer label {
+  font-size: 25px;
+}
+.cpContainer .inputGp {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGp input,
+.inputGp textarea {
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.inputGp input {
+  height: 40px;
+}
+.inputGp textarea {
+  height: 150px;
+}
+
+.cpContainer button {
+  margin-top: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+input,
+textarea {
+  margin-top: 5px;
+}
+
+.loginPage {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.loginPage p {
+  font-size: 30px;
+  color: white;
+}
+
+/* GOOGLE BUTTOn */
+.login-with-google-btn {
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 5px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: #757575;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+}
+.login-with-google-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.login-with-google-btn:active {
+  background-color: #eeeeee;
+}
+.login-with-google-btn:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25),
+    0 0 0 3px #c8dafc;
+}
+.login-with-google-btn:disabled {
+  filter: grayscale(100%);
+  background-color: #ebebeb;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+
+.homePage {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.homePage .post {
+  width: 550px;
+  height: auto;
+  max-height: 800px;
+  background-color: rgb(251, 251, 251);
+  box-shadow: rgba(0, 0, 0, 0.24) 15px 15px 15px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgb(52, 52, 52);
+  border-radius: 15px;
+}
+
+.post .postHeader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.postHeader .title {
+  flex: 80%;
+}
+.postHeader .deletePost {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.deletePost button {
+  border: none;
+
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.post .postTextContainer {
+  word-wrap: break-word;
+  height: auto;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.btn {
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .homePage .post {
+    width: 280px;
+    margin: 20px auto;
+  }
+
+  .cpContainer {
+    width: 300px;
+    padding: 15px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 5px 8px;
+  }
+}
+
+/* .logOut_btn {
+  padding: 5px 10px;
+} */
+
+.btn:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createaccount {
+  color: rgb(0, 140, 255);
+}
+
+.main {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  /* height: 59vh; */
+  /* width: 20vw; */
+  box-shadow: grey 3px 3px 16px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 3em 3em;
+  align-items: center;
+}
+
+.main div {
+  margin: 1em 0;
+}
+
+.main h3 {
+  color: black;
+  font-weight: 600;
+  padding-bottom: 14px;
+  font-size: 27px;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border-radius: 13px;
+  border: 1px solid grey;
+  outline: none;
+  padding-left: 8px;
+  width: 250px;
+  height: 28px;
+}
+
+.loginButton {
+  outline: none;
+  border: none;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  border-radius: 6px;
+  padding: 0.6em 1.7em;
+  margin-top: 1em;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.loginButton:disabled {
+  cursor: not-allowed;
+  background-color: rgb(106, 175, 231);
+
+}
+
+.loginButton:hover {
+  cursor: pointer;
+}
+
+.label {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.error {
+  font-size: 13px;
+  margin-top: 4px;
+  color: rgb(224, 37, 37);
+  margin-bottom: 0;
+}
+
+.main h6 {
+  font-size: 14px;
+  margin: 1em 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.homePage .imgContainer{
+  max-width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
